@@ -6,9 +6,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    /* justify-content: center; */
+    /* height: 100vh; */
     background-color: #f4ebc8c6;
+}
+header {
+    width:auto;
+    padding: 10px;
 }
 .title1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
