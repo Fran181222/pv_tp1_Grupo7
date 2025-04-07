@@ -13,3 +13,13 @@ body article {
 body article img {
     border-radius: 3px ;
 }
+.full-width-image {
+    width: 100vw;       
+    height: auto;       
+    display: block;
+    margin: 0;          
+    object-fit: cover;
+}
+p {
+    text-align: center;
+}
