@@ -5,30 +5,72 @@ body{
     font-family: 'Times New Roman', sans-serif;
     display: flex;
     flex-direction: column;
-
+    margin: 0;
+    padding: 2px;
     /* align-items: center; */
-    /* justify-content: center; */
+    justify-content: center;
     background-color: #f4ebc8c6;
 }
 body div img{
-      /* background-size: cover; */
+      background-size: cover;
       background-position: center;
+      position: fixed;
       background-repeat: no-repeat;
-      /* height: 100vh;  */
-      margin: 0;
+      /* width: 100%; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      filter: brightness(80%);
 }
 body section{
-    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #efeaea;
+    /* margin: auto; */
+    opacity: 0.9;
+    border-radius: 6px;
+}
+body section article{
+    display:flex;
+    width: 100%;
     justify-content: center;
     flex-direction: column;
+    padding: 100px;
     align-items: center;
+    height: 100%;
 }
 header {
+    /* position: absolute; */
+    display: flex;
+    padding: 10px 10px 10px 10px;
     width:auto;
+    background-color: rgb(26, 45, 86);
+    /* transform: translate(-50%, -50%); */
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+}
+a {
+   display: flex;
+   flex-direction: row;
+   color: #d5d0d0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     padding: 10px;
+    font-size: 25px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 .title1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
 }
 #mensaje-container {
     margin-top: 20px;
@@ -41,7 +83,9 @@ header {
     width: 300px;
     text-align: center;
     min-height: 20px;
+    position: relative;
 }
+/* texto del formulario */
 #mensaje{
     color: rgb(0, 0, 0);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -49,6 +93,7 @@ header {
     padding: 10px 40px;
     border: #d5cdb0c6;
     border-radius: 6px;
+    position: relative;
 }
 .button{
     color: aliceblue;

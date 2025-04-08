@@ -9,33 +9,35 @@
 </head>
 <body>
     <header>
-        <hr />
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="museos.html">Museos</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="museos.html">Museos</a>
-        <hr />
-    </nav>
     <div>
         <img src="/public/img/paris-hd.jpg" alt="img">
     </div>
     <section>
-        <h2 class="title1">Envianos tu opinion</h2>
-        <form id="mensajeForm">
-            <input type="text" id="mensaje" placeholder="Escribe tu mensaje" required>
-            <button type="submit" class="button">Enviar</button>
-        </form>
-        <!-- <div id="mensaje-container"></div>
-        <script>
-            document.getElementById("mensajeForm").addEventListener("submit", function(event) {
-                event.preventDefault();
-                var mensaje = document.getElementById("mensaje").value;
-                if (mensaje.trim() !== "") {
-                    document.getElementById("mensaje-container").innerText = mensaje;
-                    }
-                    document.getElementById("mensaje").value = "";
-                    });
-                </script> -->
+        <article>
+            <div>
+                <h2 class="title1">Envianos tu opinion</h2>
+                <form id="mensajeForm">
+                    <input type="text" id="mensaje" placeholder="Escribe tu mensaje" required>
+                    <button type="submit" class="button">Enviar</button>
+                </form>
+            </div>
+            <!-- <div id="mensaje-container"></div>
+            <script>
+                document.getElementById("mensajeForm").addEventListener("submit", function(event) {
+                    event.preventDefault();
+                    var mensaje = document.getElementById("mensaje").value;
+                    if (mensaje.trim() !== "") {
+                        document.getElementById("mensaje-container").innerText = mensaje;
+                        }
+                        document.getElementById("mensaje").value = "";
+                        });
+                    </script> -->
+        </article>
     </section>
     <footer>
 
