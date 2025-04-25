@@ -1,32 +1,32 @@
 *{
   margin: 0px;
 }
-.imagen-inicio {
+.imagen-inicio{
   position: relative;
-  width: 100vw;
   height: 400px;
   overflow: hidden;
 }
-
 .imagen-inicio img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: brightness(60%);
 }
-
 .imagen-inicio h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #8f3838;
-  font-size: 4rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffffdc;
+  font-size: 7rem;
+  font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   padding: 10px 20px;
   border-radius: 10px;
+  font-style: italic;
+  font-weight:900;
 }
 .imagen-inicio p {
   position: absolute;
@@ -50,16 +50,19 @@
   padding: 40px 20px;
   gap: 40px;
   max-width: 100%;
-  background: linear-gradient(90deg, #ffffff, #e2f2f4d8);
-  background: linear-gradient(90deg, #d8c4c4c9, #0000ff8a);
+  background: linear-gradient(90deg, #e0dddd, #94ccd4d8);
 }
 
 .arte_vivir .texto {
   flex: 1;
-  font-family: "Georgia", serif;
+  font-family: "Montserrat";
   font-size: 1.2rem;
   color: #333;
   padding-left: 10px;
+  text-align: center;
+}
+.texto p {
+ font-family: 'Montserrat';
 }
 
 .arte_vivir h2 {
@@ -74,6 +77,59 @@
   border-radius: 10px;
   object-fit: cover;
 }
+.container-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  gap: 40px;
+  max-width: 100%;
+  background: linear-gradient(90deg, #2323618a, #d8c4c4c9);
+}
+.texto-2 {
+  flex: 1;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  color: #333;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.container-2 h2 {
+  font-size: 2.5rem;
+  color: #1e3d59;
+  margin-bottom: 20px;
+}
+
+.img-container-2 img {
+  width: 500px;
+  height: 750px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.subtitle{
+  background: linear-gradient(90deg, #0d2153, #410c0ce6);
+} 
+.subtitle p{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ffffff;
+  padding: 40px;
+}
+hr {
+  padding: 10px;
+  background: linear-gradient(90deg, #0d2153, #410c0ce6);
+  border-color: #280a0a27;
+}
+.foot-title p{
+  font-size: 30px;
+  /* font-weight: bolder; */
+  color: #ffffff;
+  padding: 90px;
+  background: linear-gradient(90deg, #0d2153, #410c0ce6);
+}
+
 /* ---------------HEADER -------------- */
 header {
   /* position: absolute; */
@@ -114,6 +170,9 @@ a:hover{
   color: white;
   padding: 40px 20px 10px;
   font-family: Arial, sans-serif;
+}
+.footer p{
+  line-height: 2;
 }
 .footer-container{
   display: flex;
