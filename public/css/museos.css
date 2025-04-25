@@ -1,15 +1,24 @@
-* {
-    box-sizing: border-box;
+
+
+
+
+/* ==== Reset y fuente base ==== */
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
 }
 article {
     font-family:'Times New Roman', Times, sans-serif;
+
+/* ==== Layout principal ==== */
+body article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f4ebc8c6;
+    background-color: white;
 }
 article img {
     border-radius: 3px ;
@@ -39,107 +48,160 @@ header nav {
     display: flex;
     flex-direction: row;
     background: linear-gradient(90deg, #14596e, #3b0808);
-    text-align: center;
-    width: 100%;
+=======
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    max-width: 1200px;
 }
-nav a {
+
+.contenido {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #CCB38D;
-    background-color: rgba(82, 39, 39, 0);
-    font-family: "Montserrat";
-    font-weight: bold;
-    margin: 10px 20px 10px 50px;
-    font-size: 25px;
-    text-decoration: none;
- }
- a:hover{
-     text-decoration: underline;
- }
- /* --------------FOOTER-----------------*/
-.footer{
-    background-color: #1d1d1d;
-    color: white;
-    padding: 40px 20px 10px;
-    font-family: Arial, sans-serif;
-}
-.footer-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
     gap: 20px;
 }
-.footer-section{
-    flex: 1 1 200px;
-    margin: 10px;
+
+section {
+    flex: 4;
 }
-.footer-section h4 {
-    font-weight: bold;
+
+aside {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 24px;
+    border-left: 3px solid #ddd;
+    border-radius: 12px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-size: 0.95rem;
+}
+
+/* ==== Tipografía y títulos ==== */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #1e1e1e;
+    margin: 50px 0 30px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #007BFF;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+aside h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ==== Párrafos ==== */
+p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
     margin-bottom: 10px;
 }
-.social-icons a {
-    margin-right: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    text-decoration: none;
-}
-.link {
-    display: block;
-    margin-top: 10px;
-    color: #ccc;
-    text-decoration: none;
-}
-.link:hover {
-    text-decoration: underline;
-}
-.button-top {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.button-top a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+
+/* ==== Botón ==== */
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
     color: white;
     text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 12px;
-    border-top: 1px solid #444;
-    margin-top: 20px;
-  }
-  
-  .footer-bottom a {
-    color: #ccc;
-    margin: 0 5px;
-    text-decoration: none;
-  }
-  
-  .footer-bottom a:hover {
-    text-decoration: underline;
-  }
-/*------------------------FIN-FOOTER--------------------------*/
-@media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .footer-section {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .scroll-top {
-      position: static;
-      margin-top: 10px;
-    }
-  }
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+/* ==== Imágenes ==== */
+article img,
+.imagen-museo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-width-image {
+    width: 100vw;
+    height: auto;
+    display: block;
+    margin: 0;
+    object-fit: cover;
+}
+
+/* ==== Espaciado entre artículos ==== */
+article {
+    margin-bottom: 20px;
+}
+
+/* ==== Aside: lista y horarios ==== */
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+aside ul li strong {
+    color: #333;
+    font-weight: 600;
+}
+
+aside ul li .horarios {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #fafafa;
+    border-left: 4px solid #0066cc;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+aside ul li .horarios ul {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+aside ul li .horarios ul li {
+    margin-bottom: 8px;
+}
+
+aside ul li .horarios ul li strong {
+    color: #00509e;
+}
+
+
