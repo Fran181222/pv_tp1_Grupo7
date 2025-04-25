@@ -50,6 +50,7 @@
   padding: 40px 20px;
   gap: 40px;
   max-width: 100%;
+  background: linear-gradient(90deg, #ffffff, #e2f2f4d8);
 }
 
 .arte_vivir .texto {
@@ -81,13 +82,13 @@ header {
   justify-content: center;
   /* padding-left: 50px; */
   width:auto;
-  background-color:#350A0A;
+  background: linear-gradient(90deg, #1a6689, #550505);
   /* transform: translate(-50%, -50%); */
 }
 header nav {
   display: flex;
   flex-direction: row;
-  background-color: rgba(82, 39, 39, 0.674);
+  background: linear-gradient(90deg, #13526b, #580d0d);
   text-align: center;
   width: 100%;
 }
