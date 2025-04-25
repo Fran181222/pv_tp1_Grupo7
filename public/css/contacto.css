@@ -16,23 +16,19 @@ body{
     height: 900px;
     object-fit: cover;
 }
-body section{
+article{
     position: absolute;
     display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(90deg, #86b0c4d3, #664204af);
+    background: linear-gradient(90deg, #127694de, #edacacbd);
     border-radius: 6px;
-}
-body section article{
-    display:flex;
-    width: 100%;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    height: 100%;
 }
 /* ---------------HEADER -------------- */
 header {
