@@ -3,7 +3,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
 }
-.section article {
+article {
     font-family:'Times New Roman', Times, sans-serif;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     justify-content: center;
     background-color: #f4ebc8c6;
 }
-.section article img {
+article img {
     border-radius: 3px ;
 }
 .full-width-image {
@@ -21,7 +21,7 @@
     margin: 0;          
     object-fit: cover;
 }
-.section p {
+article p {
     text-align: center;
 }
 header {
@@ -32,13 +32,13 @@ header {
     justify-content: center;
     /* padding-left: 50px; */
     width:auto;
-    background-color:#350A0A;
+    background: linear-gradient(90deg, #176279, #450909);
     /* transform: translate(-50%, -50%); */
 }
 header nav {
     display: flex;
     flex-direction: row;
-    background-color: rgba(82, 39, 39, 0.674);
+    background: linear-gradient(90deg, #14596e, #3b0808);
     text-align: center;
     width: 100%;
 }
