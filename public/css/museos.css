@@ -11,7 +11,7 @@ body {
 }
 article {
     font-family:'Times New Roman', Times, sans-serif;
-
+}
 /* ==== Layout principal ==== */
 body article {
     display: flex;
@@ -49,8 +49,7 @@ header nav {
     display: flex;
     flex-direction: row;
     background: linear-gradient(90deg, #14596e, #3b0808);
-=======
-
+}
 section {
     padding: 20px;
     background-color: white;
