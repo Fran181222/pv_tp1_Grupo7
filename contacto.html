@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/contacto.css">
-    <link rel="icon" href="/public/img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/public/css/contacto.css" />
+    <link rel="icon" href="/public/img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Contacto</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <a href="index.html" style="margin-left: 100px ;">
-            <img src="/public/img/2.png" alt="logo" style=" width: 200px; display: flex; justify-content: center;">
-        </a>
-        <nav>
-            <a href="index.html" style="margin-left: 100px ;">Inicio</a>
-            <a href="museos.html">Museos</a>
-        </nav>
+      <a href="index.html" style="margin-left: 100px">
+        <img
+          src="/public/img/2.png"
+          alt="logo"
+          style="width: 200px; display: flex; justify-content: center"
+        />
+      </a>
+      <nav>
+        <a href="index.html" style="margin-left: 100px">Inicio</a>
+        <a href="museos.html">Museos</a>
+      </nav>
+      <div></div>
     </header>
-    <div>
-        <img src="/public/img/paris-hd.jpg" alt="img">
-    </div>
+    <img src="/public/img/paris-hd.jpg" class="paris" alt="img" />
     <section>
-        <article>
-            <div class="bloque-form">
-                <div class="tit-log">
-                    <p>The</p>
-                    <p>France</p>
-                    <p>Group</p>
-                </div>
-                <div class="section-form">
-                    <h2 class="title1">Envianos tu opinion</h2>
-                    <form id="mensajeForm">
-                        <input type="text" id="mensaje" placeholder="Escribe tu mensaje" required>
-                        <button type="submit" class="button">Enviar</button>
-                    </form>
-                </div>
-            </div>
-            <!-- <div id="mensaje-container"></div>
+      <article>
+        <div class="bloque-form">
+          <div class="tit-log">
+            <p>The</p>
+            <p>France</p>
+            <p>Group</p>
+          </div>
+          <div class="section-form">
+            <h2 class="title1">Envianos tu opinion</h2>
+            <form id="mensajeForm">
+              <input
+                type="text"
+                id="mensaje"
+                placeholder="Escribe tu mensaje"
+                required
+              />
+              <button type="submit" class="button">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <!-- <div id="mensaje-container"></div>
             <script>
                 document.getElementById("mensajeForm").addEventListener("submit", function(event) {
                     event.preventDefault();
@@ -48,10 +62,68 @@
                         document.getElementById("mensaje").value = "";
                         });
                     </script> -->
-        </article>
+      </article>
     </section>
-    <footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section redes">
+          <h4>Redes Sociales</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+          <a href="#" class="link">Cookies</a>
+        </div>
 
+        <div class="footer-section">
+          <h4>Paris</h4>
+          <p>Plaza de la Bastilla</p>
+          <a
+            href="https://es.wikipedia.org/wiki/Par%C3%ADs#/map/0"
+            style="color: white; text-decoration: none"
+            >Mapa interactivo de Paris</a
+          >
+          <p>Cel: 01-XX-XX-XX-XX</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Marsella</h4>
+          <p>Provenza-Alpes-Costa Azul</p>
+          <a
+            href="https://es.wikipedia.org/wiki/Marsella#/map/0"
+            style="color: white; text-decoration: none"
+            >Mapa interactivo de Marsella</a
+          >
+          <p>Cel: 01-XX-XX-XX-XX</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Lyon</h4>
+          <p>Auvernia-Ródano-Alpes</p>
+          <a
+            href="https://es.wikipedia.org/wiki/Lyon#/map/0"
+            style="color: white; text-decoration: none"
+            >Mapa interactivo de Lyon</a
+          >
+          <p>Cel: 01-XX-XX-XX-XX</p>
+        </div>
+
+        <div class="button-top">
+          <a href="#"><i class="fas fa-arrow-up"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          ·<a href="#">Davide Arroyo</a> · <a href="#">Ruan Lindon</a> ·
+          <a href="#">Francisco Quispe</a> · <a href="#">Gabriel Roel</a> ·<a
+            href="#"
+            >Brian Llanos</a
+          >
+          · ©Grupo7 - Publicidad de Francia - Todos los derechos reservados ·
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

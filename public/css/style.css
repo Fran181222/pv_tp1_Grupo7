@@ -1,3 +1,6 @@
+*{
+  margin: 0px;
+}
 .imagen-inicio {
   position: relative;
   width: 100vw;
@@ -69,3 +72,108 @@
   border-radius: 10px;
   object-fit: cover;
 }
+/* ---------------HEADER -------------- */
+header {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 50px; */
+  width:auto;
+  background-color:#350A0A;
+  /* transform: translate(-50%, -50%); */
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(82, 39, 39, 0.674);
+  text-align: center;
+  width: 100%;
+}
+nav a {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ color: #CCB38D;
+ font-family: "Montserrat";
+ font-weight: bold;
+ margin: 10px 20px 10px 50px;
+ font-size: 25px;
+ text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+/* ---------------FIN-HEADER---------------- */
+/* --------------FOOTER-----------------*/
+.footer{
+  background-color: #1d1d1d;
+  color: white;
+  padding: 40px 20px 10px;
+  font-family: Arial, sans-serif;
+}
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  gap: 20px;
+}
+.footer-section{
+  flex: 1 1 200px;
+  margin: 10px;
+}
+.footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.social-icons a {
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-decoration: none;
+}
+.link {
+  display: block;
+  margin-top: 10px;
+  color: #ccc;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.button-top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.button-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+/*------------------------FIN-FOOTER--------------------------*/
