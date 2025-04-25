@@ -16,23 +16,18 @@ body{
     height: 900px;
     object-fit: cover;
 }
-body section{
+article{
     position: absolute;
     display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(228, 227, 205, 0.754);
+    background: linear-gradient(90deg, #127694de, #edacacbd);
     border-radius: 6px;
-}
-body section article{
-    display:flex;
-    width: 100%;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    height: 100%;
 }
 /* ---------------HEADER -------------- */
 header {
@@ -43,13 +38,13 @@ header {
     justify-content: center;
     /* padding-left: 50px; */
     width:auto;
-    background-color:#350A0A;
+    background: linear-gradient(90deg, #176279, #450909);
     /* transform: translate(-50%, -50%); */
 }
 header nav {
     display: flex;
     flex-direction: row;
-    background-color: rgba(82, 39, 39, 0.674);
+    background: linear-gradient(90deg, #14596e, #3b0808);
     text-align: center;
     width: 100%;
 }
@@ -79,8 +74,7 @@ a:hover{
     font-size:60px;
     font-style: oblique;
     margin: 100px;
-    color: #a83535;
-
+    color: #413017;
 }
 .tit-log p{
     margin: 1px;
@@ -91,7 +85,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: right;
-    background-color: rgba(231, 228, 216, 0.781);
+    background: linear-gradient(90deg, #efd7bc8d, #dfd3bd);
     border-radius: 8px;
 }
 .title1{
